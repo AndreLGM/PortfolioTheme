@@ -100,15 +100,33 @@
       </div>
 
       <div class="card card-body py-5">
+
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-sm">
+          
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-body">
+                  <h5>Sua mensagem foi enviada</h5>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+
         <h3>Entrar em contato:</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, tempora!</p>
-        <form action="">
+        <form id="contactForm">
           <div class="form-group">
             <div class="input-group input-group-lg">
               <span class="input-group-addon bg-danger text-white p-2">
                 <i class="fa fa-user"></i>
               </span>
-              <input type="text" class="form-control bg-dark text-white" placeholder="Nome">
+              <input type="text" class="form-control bg-dark text-white" placeholder="Nome" id="nome" required>
             </div>
           </div>
           <div class="form-group">
@@ -116,7 +134,15 @@
                 <span class="input-group-addon bg-danger text-white p-2">
                   <i class="fa fa-envelope"></i>
                 </span>
-                <input type="email" class="form-control bg-dark text-white" placeholder="Email">
+                <input type="email" class="form-control bg-dark text-white" placeholder="Email" id="email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group input-group-lg">
+                <span class="input-group-addon bg-danger text-white p-2">
+                  <i class="fa fa-phone"></i>
+                </span>
+                <input type="text" class="form-control bg-dark text-white" placeholder="(DDD)XXXXX-XXXX" id="phone" required>
               </div>
             </div>
             <div class="form-group">
@@ -124,10 +150,10 @@
                   <span class="input-group-addon bg-danger text-white p-2">
                     <i class="fa fa-pencil"></i>
                   </span>
-                  <textarea rows="5" class="form-control bg-dark text-white" placeholder="Mensagem"></textarea>
+                  <textarea rows="5" class="form-control bg-dark text-white" placeholder="Mensagem" id="mensagem"></textarea>
                 </div>
               </div>
-              <input type="submit" value="Enviar" class="btn btn-danger btn-block btn-lg">
+              <input type="submit" value="Enviar" class="btn btn-danger btn-block btn-lg" data-toggle="modal" data-target="#myModal">
         </form>
       </div>
 
@@ -145,13 +171,10 @@
     </footer>
   </div>
   
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script>
-    $('.port-item').click(function(){
-      $('.collapse').collapse('hide');
-    });
-  </script>
+  <script src="js/app.js"></script>
 </body>
 </html>
