@@ -11,6 +11,11 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- Return to Top -->
+  <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!--Navigation-->
   <div class="container">
     <header id="main-header">
       <div class="row no-gutters">
@@ -303,6 +308,12 @@
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+  <script src="js/scroll.js"></script>
   <script src="js/app.js"></script>
+  <script>
+    $(".port-item").click(function(){
+      $(".collapse").collapse("hide");
+    });
+  </script>
 </body>
 </html>
