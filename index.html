@@ -35,7 +35,7 @@
                 <div class="port-item p-2 bg-primary" data-toggle="collapse" data-target="#home">
                   <i class="fa fa-home d-block"></i> Home
                 </div>
-                <div class="port-item p-2 bg-success">
+                <div class="port-item p-2 bg-success" data-toggle='collapse' data-target='#curriculo'>
                   <i class="fa fa-graduation-cap d-block"></i> Curriculo
                 </div>
                 <div class="port-item p-2 bg-warning">
@@ -90,6 +90,72 @@
       </div>
     </div>
 
+    <!--Curriculo-->
+    <div id="curriculo" class="collapse">
+      <div class="card card-body bg-success text-white py-5">
+        <h2>Meu Curriculo</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nihil impedit sed fuga quia veritatis.</p>
+      </div>
+
+      <div class="card card-body py-5">
+        <h3>Where have I worked?</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat eaque aut voluptate quas fugiat hic.</p>
+
+        <div class="card-deck">
+
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Devmasters</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, voluptates?</p>
+              <p class="p-2 mb-3 bg-dark text-white">
+                Position: Desenvolvedor Front End
+              </p>
+              <p class="p-2 mb-3 bg-dark text-white">
+                Phone: (444) 4444-44444
+              </p>
+            </div>
+            <div class="card-footer">
+              <h6 class="text-muted">Dates: 2016 - 2017</h6>
+            </div>
+          </div>
+
+          <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Devmasters</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, voluptates?</p>
+                <p class="p-2 mb-3 bg-dark text-white">
+                  Position: Desenvolvedor Front End
+                </p>
+                <p class="p-2 mb-3 bg-dark text-white">
+                  Phone: (444) 4444-44444
+                </p>
+              </div>
+              <div class="card-footer">
+                <h6 class="text-muted">Dates: 2016 - 2017</h6>
+              </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Devmasters</h4>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, voluptates?</p>
+                  <p class="p-2 mb-3 bg-dark text-white">
+                    Position: Desenvolvedor Front End
+                  </p>
+                  <p class="p-2 mb-3 bg-dark text-white">
+                    Phone: (444) 4444-44444
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <h6 class="text-muted">Dates: 2016 - 2017</h6>
+                </div>
+              </div>
+
+        </div>
+      </div>
+
+    </div>
+
     <!-- Contato -->
     <div id="contato" class="collapse">
       <div class="card card-body bg-danger text-white py-5">
@@ -118,7 +184,7 @@
 
         <h3>Entrar em contato:</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, tempora!</p>
-        <form id="contactForm">
+        <form class="needs-validation" id="contactForm" novalidate>
           <div class="form-group">
             <div class="input-group input-group-lg">
               <span class="input-group-addon bg-danger text-white p-2">
@@ -141,6 +207,7 @@
                   <i class="fa fa-phone"></i>
                 </span>
                 <input type="text" class="form-control bg-dark text-white" placeholder="(DD)XXXXX-XXXX" id="phone" required>
+
               </div>
             </div>
             <div class="form-group">
